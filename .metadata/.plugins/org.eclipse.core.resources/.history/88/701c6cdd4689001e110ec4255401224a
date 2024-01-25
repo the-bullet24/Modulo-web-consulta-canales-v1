@@ -1,0 +1,8 @@
+package pe.bn.com.service;
+
+public interface IService_registro {
+	
+	public void eliminar(long id);
+	
+
+}

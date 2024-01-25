@@ -1,0 +1,5 @@
+package pe.bn.com.Config;
+
+public class WebSecurityConfig {
+
+}

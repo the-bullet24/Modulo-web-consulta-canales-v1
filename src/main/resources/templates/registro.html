@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title> version 2 -Registro de usuarios</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+	
+	<br>
+	
+	<br>	
+	
+	 <form action="" th:object="${nuevocdd}"  method="post"  novalidate>
+        
+        <div class="mb-2">
+            <label for="F01_ID_CLIENT" > CIC </label>
+            <input id="F01_ID_CLIENT" type="text"  th:errorclass="is-invalid"
+                   placeholder="Ingrese CIC" class="form-control" th:field="*{F01_ID_CLIENT}">
+
+            <div class="invalid-feedback" th:errors="*{F01_ID_CLIENT}">  </div>
+
+        </div>
+
+        <div class="mb-2">
+            <label for="F01_NUM_DOC" > Documento  </label>
+            <input id="F01_NUM_DOC" type="text" th:errorclass="is-invalid"
+                   placeholder="Ingrese Documento"  class="form-control"  th:field="*{F01_NUM_DOC}">
+
+            <div class="invalid-feedback" th:errors="*{F01_NUM_DOC}">  </div>
+        </div >
+
+        <div class="mb-2">
+            <label for="F01_OPER_MOBILE" > Operador </label>
+            <input id="F01_OPER_MOBILE" type="text" placeholder="Ingrese Operador" th:errorclass="is-invalid"
+                   class="form-control" th:field="*{F01_OPER_MOBILE}">
+
+            <div class="invalid-feedback" th:errors="*{F01_OPER_MOBILE}">  </div>
+        </div>
+
+        <div class="mb-2" >
+            <label for="F01_AFFIL_STATUS" > Afiliación Status </label>
+            <input id="F01_AFFIL_STATUS" type="text" placeholder="Ingrese Status Afiliación" th:errorclass="is-invalid"
+                   class="form-control" th:field="*{F01_AFFIL_STATUS}">
+
+            <div class="invalid-feedback" th:errors="*{F01_AFFIL_STATUS}">  </div>
+        </div>
+        
+        
+        <div class="mb-2" >
+            <label for="F01_TOKEN_STATUS" > Token Status </label>
+            <input id="F01_TOKEN_STATUS" type="email" placeholder="Ingrese Status" th:errorclass="is-invalid"
+                   class="form-control" th:field="*{F01_TOKEN_STATUS}">
+
+            <div class="invalid-feedback" th:errors="*{F01_TOKEN_STATUS}">  </div>
+        </div>
+        
+
+        <a href="/v1" class="btn btn-danger me-2">
+            Cancelar
+        </a>
+        
+        <button class="btn btn-primary"> [['Registrar']] contacto  </button>
+
+    </form>
+        
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+</body>
+</html>

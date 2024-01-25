@@ -1,0 +1,59 @@
+package pe.bn.com.modelo;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+
+@Data
+@Entity
+@Table(name = "bnmssftf01_client_soft", schema = "bn_ms_soft")
+
+public class Modelo_datos_cdd {
+
+	@Id
+	@Column(name="F01_ID_CLIENT")
+	private int F01_ID_CLIENT;
+	@Column(name="F01_TYPE_DOC")
+	private String F01_TYPE_DOC;
+	@Column(name="F01_NUM_DOC")
+	private String F01_NUM_DOC;
+	@Column(name="F01_NAME_CLIENT")
+	private String F01_NAME_CLIENT;
+	@Column(name="F01_OPER_MOBILE")
+	private String F01_OPER_MOBILE;
+	@Column(name="F01_NUMBER_MOBILE")
+	private String F01_NUMBER_MOBILE;
+	@Column(name="F01_CHANNEL_CODE")
+	private String F01_CHANNEL_CODE;
+	@Column(name="F01_AFFIL_DATE")
+    private String F01_AFFIL_DATE;
+	@Column(name="F01_AFFIL_CHANNEL")
+    private String F01_AFFIL_CHANNEL;
+	@Column(name="F01_AFFIL_APPLICATION")
+    private String F01_AFFIL_APPLICATION;
+	@Column(name="F01_AFFIL_STATUS")
+    private String F01_AFFIL_STATUS;
+	@Column(name="F01_TOKEN_STATUS")
+    private String F01_TOKEN_STATUS;
+	@Column(name="F01_FLAG_TERMS")
+    private String F01_FLAG_TERMS;
+	@Column(name="F01_FLAG_AFFIL")
+    private String F01_FLAG_AFFIL;
+	@Column(name="F01_SECURITY_STATUS")
+    private String F01_SECURITY_STATUS;
+	@Column(name="F01_SECURITY_STATUS_DATE")
+    private String F01_SECURITY_STATUS_DATE;
+	@Column(name="F01_CIA_CODE")
+    private String F01_CIA_CODE;
+	@Column(name="F01_MODEL_MOBILE")
+    private String F01_MODEL_MOBILE;
+	@Column(name="F01_TOKEN_NOTIFICATION")
+    private String F01_TOKEN_NOTIFICATION;
+	@Column(name="F01_MOBILE_STORE")
+    private String F01_MOBILE_STORE;
+	
+	
+}

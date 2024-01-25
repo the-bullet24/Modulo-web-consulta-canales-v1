@@ -1,0 +1,82 @@
+package pe.bn.com.modelo;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+@Entity
+@Data
+@Table(name = "bnmssftf01_client_soft"   ,  schema = "bn_ms_soft") 
+public class Modelo_datos_cdd implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "F01_ID_CLIENT")
+    
+    private int idClient;
+
+    @Column(name = "F01_TYPE_DOC", length = 20)
+    private String typeDoc;
+
+    @Column(name = "F01_NUM_DOC", length = 12)
+    private String numDoc;
+
+    @Column(name = "F01_NAME_CLIENT", length = 150)
+    private String nameClient;
+
+    @Column(name = "F01_OPER_MOBILE", length = 20)
+    private String operMobile;
+
+    @Column(name = "F01_NUMBER_MOBILE", length = 9)
+    private String numberMobile;
+
+    @Column(name = "F01_CHANNEL_CODE", length = 12)
+    private String channelCode;
+
+    @Column(name = "F01_AFFIL_DATE")
+    private Timestamp affilDate;
+
+    @Column(name = "F01_AFFIL_CHANNEL", length = 12)
+    private String affilChannel;
+
+    @Column(name = "F01_AFFIL_APPLICATION", length = 12)
+    private String affilApplication;
+
+    @Column(name = "F01_AFFIL_STATUS", length = 2)
+    private String affilStatus;
+
+    @Column(name = "F01_TOKEN_STATUS", length = 2)
+    private String tokenStatus;
+
+    @Column(name = "F01_FLAG_TERMS", length = 1)
+    private char flagTerms;
+
+    @Column(name = "F01_FLAG_AFFIL", length = 1)
+    private char flagAffil;
+
+    @Column(name = "F01_SECURITY_STATUS", length = 4)
+    private String securityStatus;
+
+    @Column(name = "F01_SECURITY_STATUS_DATE")
+    private Timestamp securityStatusDate;
+
+    @Column(name = "F01_CIA_CODE", length = 500)
+    private String ciaCode;
+
+    @Column(name = "F01_MODEL_MOBILE", length = 50)
+    private String modelMobile;
+
+    @Column(name = "F01_TOKEN_NOTIFICATION", length = 500)
+    private String tokenNotification;
+
+    @Column(name = "F01_MOBILE_STORE", length = 50)
+    private String mobileStore;
+
+  
+}

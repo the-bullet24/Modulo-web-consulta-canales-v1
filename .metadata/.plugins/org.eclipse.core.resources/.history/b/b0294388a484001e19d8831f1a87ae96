@@ -1,0 +1,5 @@
+package pe.bn.com.service;
+
+public interface IService_registro {
+
+}

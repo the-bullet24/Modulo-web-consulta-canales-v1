@@ -1,0 +1,65 @@
+package pe.bn.com.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import pe.bn.com.modelo.Modelo_datos_cdd;
+import pe.bn.com.repository.Repository_datos;
+import pe.bn.com.repository.Repository_registro;
+
+@Service
+public class Service_registro  implements IService_registro{
+
+	@Autowired
+	private Repository_registro repository_registro;
+	
+	@Override
+	public void eliminar(long id) {
+		repository_registro.eliminar(id);
+		
+	}
+
+	@Override
+	public List<Modelo_datos_cdd> getListar() {
+ 
+		return repository_registro.findAll();
+	}
+
+	
+	
+
+	
+	
+/*	
+	public List<Modelo_datos_cdd> getListarRegistros(){
+		return registro.findAll();
+	}
+	*/
+	
+	/*  public boolean addRegistro(String f01_NUM_DOC, String f01_NUMBER_MOBILE) {
+	  
+	  try {
+		  registro.addRegistro(f01_NUM_DOC, f01_NUMBER_MOBILE); 
+			 return true;
+		  
+	} catch (Exception e) {
+			return false;
+	}
+	  
+	  }*/
+	  
+	}
+	  
+	
+	
+	
+	
+	
+	
+

@@ -1,0 +1,61 @@
+package pe.bn.com.modelo;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "bnmssftf02_token_status")
+
+public class Modelo_datos_token {
+
+	
+	@Id
+	@Column(name ="F02_ID_TOKEN_STATUS")
+	private int F02_ID_TOKEN_STATUS; 
+	@Column(name ="F02_ID_CLIENT")
+	private String  F02_ID_CLIENT; 
+	@Column(name = "F02_OPER_MOBILE")
+	private String  F02_OPER_MOBILE; 
+	@Column(name = "F02_NUMER_MOBILE")
+	private String F02_NUMER_MOBILE;
+	@Column (name ="F02_AFFIL_STATUS_INITIAL")
+	private String F02_AFFIL_STATUS_INITIAL; 
+	@Column(name = "F02_AFFIL_STATUS_FINAL")
+	private String F02_AFFIL_STATUS_FINAL;
+	@Column(name = "F02_TOKEN_STATUS_INITIAL")
+	private String F02_TOKEN_STATUS_INITIAL ; 
+	@Column(name = "F02_TOKEN_STATUS_FINAL")
+	private String F02_TOKEN_STATUS_FINAL; 
+	@Column (name = "F02_DATE_TOKEN_STATUS")
+	private String F02_DATE_TOKEN_STATUS; 
+	@Column (name = "F02_CHANNEL_CODE")
+	private String F02_CHANNEL_CODE ; 
+	@Column (name = "F02_APPLICATION")
+	private String F02_APPLICATION ; 
+	@Column(name = "F02_CHANNEL")
+	private String F02_CHANNEL; 
+	@Column(name = "F02_SECURITY_STATUS")
+	private String F02_SECURITY_STATUS; 
+	@Column(name = "F02_NAME_CLIENT")
+	private String F02_NAME_CLIENT; 
+	@Column (name = "F02_EMAIL")
+	private String F02_EMAIL; 
+	@Column(name = "F02_TYPE_OPERATION")
+	private String F02_TYPE_OPERATION; 
+	@Column(name = "F02_REASON_CODE")
+	private String F02_REASON_CODE;	 
+	@Column (name  = "F02_CIA_CODE")
+	private String F02_CIA_CODE; 
+	@Column(name = "F02_MODEL_MOBILE")
+	private String F02_MODEL_MOBILE; 
+	@Column(name = "F02_TOKEN_NOTIFICATION")
+	private String F02_TOKEN_NOTIFICATION; 
+	@Column(name = "F02_MOBILE_STORE")
+	private String F02_MOBILE_STORE;
+
+	
+}

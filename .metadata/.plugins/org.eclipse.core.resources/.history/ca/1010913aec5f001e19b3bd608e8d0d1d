@@ -1,0 +1,36 @@
+package pe.bn.com.modelo;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
+
+
+@Data
+@Entity
+
+public class Datos_cdd {
+
+	@Id
+	private String F01_ID_CLIENT;
+	private String F01_TYPE_DOC;
+	private String F01_NUM_DOC;
+	private String F01_NAME_CLIENT;
+	private String F01_OPER_MOBILE;
+	private String F01_NUMBER_MOBILE;
+	private String F01_CHANNEL_CODE;
+    private String F01_AFFIL_DATE;
+    private String F01_AFFIL_CHANNEL;
+    private String F01_AFFIL_APPLICATION;
+    private String F01_AFFIL_STATUS;
+    private String F01_TOKEN_STATUS;
+    private String F01_FLAG_TERMS;
+    private String F01_FLAG_AFFIL;
+    private String F01_SECURITY_STATUS;
+    private String F01_SECURITY_STATUS_DATE;
+    private String F01_CIA_CODE;
+    private String F01_MODEL_MOBILE;
+    private String F01_TOKEN_NOTIFICATION;
+    private String F01_MOBILE_STORE;
+	
+	
+}
